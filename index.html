@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nurten Demir">
+    <meta name="description" content="About me page - Nurten Demir">
+    <title>Nurten Demir - Full Stack Developer Adayı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <meta property="og:title" content="Nurten Demir - Full Stack Developer Adayı">
+    <meta property="og:description" content="Merhaba! Ben Nurten Demir, bir Full Stack Developer adayıyım. Bu sayfada kendim hakkında bilgi bulabilir, projelerimi inceleyebilir ve benimle iletişime geçebilirsiniz.">
+    <meta property="og:image" content="profile.jpg">
+</head>   
+
+<body>
+    <div id="welcome-message" class="welcome-message">
+        Merhaba! Nurten'in kişisel sayfasına hoş geldin!
+    </div>
+    <div class="dark-mode-toggle">
+        <button id="dark-mode-btn">🌙 Karanlık Mod</button>
+    </div>
+    <div class="nav-menu">
+        <a href="#profile-card" class="nav-link"> Hakkımda</a>
+        <a href="#projects" class="nav-link"> Projeler</a>
+        <a href="#mini-projects" class="nav-link"> Mini Projeler</a>
+        <a href="#contact" class="nav-link"> İletişim</a>
+    </div>
+    <div class="container">
+        <div class="profile-card" id="profile-card">
+            <img src="images.jpeg" alt="profile picture" class="profile-picture" width="300">
+            <h1 class="name">Nurten Demir</h1>
+            <div class="cv-button-container">
+                <a href="NurtenDemirCv.pdf" download class="cv-button">CV'mi İndir</a>
+            </div>
+            <h3 class="bio">Merhaba! Ben Nurten Demir, bir Full Stack Developer adayıyım. Bu sayfada kendim hakkında bilgi bulabilir, projelerimi inceleyebilir ve benimle iletişime geçebilirsiniz.</h3>
+            <p class="pragraph">Yazılım dünyasına olan ilgimle birlikte, web teknolojilerinde full-stack developer olma yolunda ilerliyorum.
+                Frontend tarafında HTML, CSS ve JavaScript ile kullanıcı dostu arayüzler tasarlıyor; backend tarafında ise Node.js ve veritabanı sistemleriyle dinamik uygulamalar geliştiriyorum.
+                Bunun yanında veri toplama ve otomasyon konularına da meraklıyım. Selenium ve Scholarly kütüphaneleriyle veri çekme ve analiz üzerine çalışmalar yapıyor, farklı kaynaklardan bilgi toplamayı öğreniyorum.
+                Kodun sadece çalışmasını değil, temiz, sürdürülebilir ve mantıklı olmasını önemsiyorum.
+                Şu anda React, API geliştirme ve veritabanı yönetimi üzerine yoğunlaşıyorum.
+                Amacım; tasarım, veri ve teknolojiyi bir araya getirerek uçtan uca çözüm sunabilen bir yazılım geliştirici olmak</p>
+            <h4 class="skills">Yeteneklerim:</h4>
+            <ul class="skills-list">
+                <li>Frontend Geliştirme:HTML, CSS, JavaScript</li>
+                <li>Backend Geliştirme:Node.js, Express.js</li>
+                <li>Veritabanı Yönetimi:MongoDB, MySQL</li>
+                <li>Otomasyon: Selenium, Scholarly</li>
+            </ul>
+            <h4 class="projects" id="projects">Projelerim:</h4>
+            <div class="projects-container">
+                <div class="project-item">
+                <h5 class="Project-title">Akademik Yayın Veri Çekme Projesi</h5>
+                <p>İŞKUR bünyesinde, üniversitemizin Dijital Dönüşüm ve Yazılım Ofisi Koordinatörlüğü'nde çalışırken aldığım bir görevle başladığım bu projede, Google Scholar'dan akademisyenlerin yayınlarını ve metriklerini otomatik olarak çekip JSON formatında kaydetmeyi hedefledim.</p>
+                
+                <h6>Kulllanılan Teknolojiler:</h6>
+                <ul>
+                    <li>Python</li>
+                    <li>Selenium</li>
+                    <li>Scholarly Kütüphanesi</li>
+                    <li>JSON</li>
+                </ul>
+
+                <p>Bu projeye, üniversitemizdeki akademisyenlerin yayınlarını takip etmek ve raporlamak ihtiyacından yola çıkarak başladım. Manuel olarak yapılan bu işlemin otomatikleştirilmesi gerekiyordu ve ben de bu görevi üstlendim.</p>
+                <p>En çok zorlandığım kısım, Google Scholar'ın dinamik yapısıydı. Sayfaların yüklenme şekilleri, butonlara tıklama zamanlamaları ve verilerin doğru çekilmesi beni epey uğraştırdı. Özellikle sayfa kaydırma (scroll) işlemlerini doğru zamanlamayla yapmak bayağı deneme-yanılma gerektirdi.</p>
+                <p>Zorlukları aşmak için Selenium'un bekleme fonksiyonlarını (WebDriverWait) detaylıca öğrendim ve sayfa yapısını analiz ederek doğru elementleri yakalamayı başardım. Bu proje sayesinde web scraping mantığını, dinamik içeriklerle başa çıkmayı ve veriyi yapılandırılmış formatta (JSON) kaydetmeyi öğrendim.</p>
+                <p>Proje başarıyla tamamlandı ve akademisyenlerin yayın verileri düzenli olarak JSON formatında çekilmeye başlandı. İleride bu verileri bir web arayüzünde göstermeyi ve farklı akademik veritabanlarını da eklemeyi planlıyoruz.</p>
+                </div>
+                <div class="project-item">
+                <h5 class="Project-title">Tech Edu Platform</h5>
+                <p>Kendi öğrenme yolculuğumda yeni şeyler öğrendikçe güncelleyebileceğim, adım adım geliştirdiğim bir eğitim platformu. HTML ile iskeleti oluşturdum, CSS ile renk ve düzen kattım, şimdi de JavaScript ile dinamikleştirme aşamasındayım.</p>
+
+                <h6>Kulllanılan Teknolojiler:</h6>
+                <ul>
+                    <li>HTML(sayfa yapısı)</li>
+                    <li>CSS (stil ve düzen)</li>
+                    <li>JavaScript (dinamikleştirme)</li>
+                    <li>Youtube iframe (Video gömme)</li> 
+                    
+                </ul>
+
+                <p>Bu projeyi tamamen öğrenmek için yaptım. Full stack alanında yeni şeyler öğrendikçe güncelleyebileceğim, kendi gelişimimi takip edebileceğim bir platform olsun istedim. Adım adım ilerledim: önce HTML ile iskelet, sonra CSS ile tasarım, şimdi de JavaScript ile canlandırma aşaması.</p>
+                <p>En çok zorlandığım kısım tasarım oldu. HTML ve CSS biliyorum ama güzel, kullanıcı dostu bir tasarım yapmak benim için hâlâ zorlayıcı. Renk uyumları, boşluklar, responsive tasarım derken epey uğraştım. Ama her zorlandığımda yeni bir şey öğrendim.</p>
+                <p>Platformda şu an Home (ana sayfa), Courses (kurslar), Hakkında ve İletişim sayfaları var. Kursları, YouTube'daki eğitim videolarını sayfaya gömerek oluşturdum. Udemy tarzı bir yapı düşünebilirsin, ama tamamen benim öğrenme sürecimi yansıtan kişisel bir proje.</p>
+                <p>Bu proje bana HTML, CSS ve JavaScript'in nasıl birlikte çalıştığını adım adım öğretti. Tasarım yapamıyorum diye düşünürken aslında deneye deneye öğrendiğimi fark ettim. Proje henüz bitmedi, hala geliştirme aşamasında. JavaScript ile daha dinamik hale getirip, belki bir backend ekleyerek kullanıcı kaydı gibi özellikler de eklemeyi planlıyorum.</p>
+                
+                </div>
+                <div class="project-item">
+                    <h5 class="Project-title">Kalori Takip Masaüstü Uygulaması (Kaybolan Projem)</h5>
+                    <p>Okulda verilen bir ödev projesi olarak başladığım, Python ve PyQt5 kullanarak geliştirdiğim bir masaüstü uygulaması. Kullanıcıların günlük kalori takibini yapmasını sağlıyor, boy-kilo bilgileriyle vücut kitle indeksini hesaplıyordu.</p>
+                     <h6>Kullanılan Teknolojiler</h6>
+                    <ul>
+                        <li>Python</li>
+                        <li>PyQt5</li>
+                        <li>SQLite (veritabanı)</li>
+                    </ul>
+
+                    <p>Bu proje tamamen okulda verilen bir ödev sayesinde ortaya çıktı. Hocamızın isteğiyle Python ve PyQt5 kullanarak bir masaüstü uygulaması geliştirmemiz gerekiyordu. Ben de hem öğrenmek hem de işlevsel bir şey yapmak için kalori takip uygulaması yapmaya karar verdim.</p>
+                    <p>Uygulama şöyle çalışıyordu: Kullanıcı gün içinde ne yediğini ve ne kadar yediğini giriyor, uygulama otomatik olarak kalori hesabı yapıyordu. Ayrıca boy ve kilo bilgilerini girince vücut kitle indeksini hesaplayıp sonucu gösteriyordu. Tüm kullanıcı bilgileri SQL veritabanında saklanıyordu.</p>
+                    <p>PyQt5 ile arayüz tasarlamak başta çok eğlenceli geldi çünkü kendi tasarımımızı kendimiz yapıyorduk. Ama butonlarla veritabanı bağlantılarını kurmak, verileri çekip göstermek beni epey zorladı. Özellikle SQL sorgularının PyQt5 içinde doğru çalışması için çok uğraştım. Ama her zorlukta yeni bir şey öğrendim.</p>
+                    <p>Ne yazık ki bu proje bilgisayarımda yaşanan bir sorun nedeniyle kayboldu. Yedeklemeyi unutmuş olmam büyük bir ders oldu benim için. Ama bu deneyim bana masaüstü uygulama geliştirme, PyQt5 kullanımı ve SQL veritabanı yönetimi konularında çok şey öğretti. İleride benzer bir projeyi yeniden yapmayı düşünüyorum, bu sefer daha sağlam bir şekilde yedekleyerek!</p>
+                </div>
+
+                <h4 class="mini-projects-title" id="mini-projects"> Mini Projelerim (Öğrenme Yolculuğumdan Küçük Parçalar)</h4>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="web"> Web</button>
+                    <button class="filter-btn" data-filter="python"> Python</button>
+                    <button class="filter-btn" data-filter="otomasyon"> Otomasyon</button>
+                </div>
+                <div class="mini-projects-container">
+                    <h5 class="mini-category"> Web Sayfaları</h5>
+                    <div class="mini-project-item" data-category="web">
+                        <h6>Futbol Haber Sayfası</h6>
+                        <p>Bir futbolcunun takımdan ayrılması haberini yaptığım, HTML ve CSS kullandığım basit bir haber sayfası.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> HTML, CSS</p>
+                        <p><strong>Öğrendiklerim:</strong> Haber sayfası düzeni oluşturmayı, başlık ve metin hiyerarşisini, görsel yerleştirmeyi öğrendim.</p>
+                    </div>
+
+                    <div class="mini-project-item">
+                        <h6>Game Of Thrones Movie Page</h6>
+                        <p>Game of Thrones'un özetini ve oyuncularını anlattığım, hayranı olduğum diziye saygı duruşu niteliğinde bir proje.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> HTML, CSS</p>
+                        <p><strong>Öğrendiklerim:</strong> Daha karmaşık bir sayfa yapısı oluşturmayı, farklı bölümler eklemeyi ve görsellerle zenginleştirmeyi öğrendim.</p>
+                    </div>
+
+                    <div class="mini-project-item">
+                        <h6>Taco Shop Menu Sayfası</h6>
+                        <p>Yemek menüsü ve fiyat listesini gösteren, HTML ve CSS kullanarak tasarladığım bir menü sayfası.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> HTML, CSS</p>
+                        <p><strong>Öğrendiklerim:</strong> Menü sayfası yapısını kurmayı, tablolarla veri gösterimini ve görsel düzenlemeyi öğrendim.</p>  
+                    </div>
+
+                    <h5 class="mini-category">Python Mini Projeleri</h5>
+                    <div class="mini-project-item" data-category="python">
+                        <h6>Sayı Tahmin oyunu</h6>
+                        <p>Kullanıcının 1 ile 100 arasında rastgele seçilen bir sayıyı tahmin etmeye çalıştığı basit bir oyun.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python</p>
+                    </div>
+
+                    <div class="mini-project-item">
+                        <h6>Öğrenci Yönetim Sistemi</h6>
+                        <p>Python kullanarak, öğrencilerin bilgilerini ekleyip silebileceğimiz basit bir öğrenci yönetim sistemi.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python</p>
+                    </div>
+                    <div class="mini-project-item">
+                        <h6>Öğrenci Not Sistemi</h6>
+                        <p>Öğrencilerin notlarını ekleyip, güncelleyip ve silebileceğimiz bir öğrenci not sistemi.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python</p>
+                    </div>
+                    <div class="mini-project-item">
+                        <h6>Banka Hesabı Ve kişisel Finans</h6>
+                        <p>Python kullanarak, kullanıcıların banka hesaplarını ve kişisel finans bilgilerini yönetebilecekleri basit bir uygulama.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python</p>
+                    </div>
+                    <div class="mini-project-item">
+                        <h6>Fibonacci Serisi Hesaplama</h6>
+                        <p>Python kullanarak, kullanıcıların girdiği sayıya göre Fibonacci serisini hesaplayan basit bir uygulama.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python</p>
+                    </div>
+                    <div class="mini-project-item">
+                        <h6>Alışveriş Sepeti Uygulaması</h6>
+                        <p>Python kullanarak, kullanıcıların alışveriş sepetlerini yönetebilecekleri basit bir uygulama.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python</p>
+                    </div>
+                    <h5 class="mini-category">Otomasyon & Veri Çekme</h5>
+                    <div class="mini-project-item" data-category="otomasyon">
+                        <h6>Google scholar Veri Çekme</h6>
+                        <p>Python ve Scholarly kullanarak, Google Scholar'dan veri çekip listeleyen basit bir web scraping projesi.</p>
+                        <p><strong>Öğrendiklerim:</strong> Scholarly kütüphanesini kullanarak Google Scholar'dan veri çekme tekniklerini öğrendim.</p>
+                        <p><strong>Kullanılan Teknolojiler:</strong> Python, Scholarly,json</p>
+                    </div>
+                        <div class="mini-project-item">
+                            <h6>OpenAlex Akademik Veri çekme </h6>
+                            <p>Python ve Selenium kullanarak, OpenAlex'den akademik veri çekip kullanıcıya gösteren basit bir web scraping projesi.</p>
+                            <p><strong>Öğrendiklerim:</strong> Selenium kütüphanesini kullanarak web sayfalarından veri çekme tekniklerini öğrendim.</p>
+                            <p><strong>Kullanılan Teknolojiler:</strong> Python, Selenium,json</p>
+                </div>
+                
+            </div>
+            <h4 class="education">Eğitim Bilgilerim:</h4>
+            <ul>
+                <li>Kütahya Dumlupınar Üniversitesi - Yazılım Mühendisliği</li>
+            </ul>
+        </div>
+        <div class="contact-info" id="contact">
+            <h2>İletişim Bilgileri</h2>
+            <p>
+                Email: <a href="mailto:nrtndmr4549@gmail.com" id="email-link">nrtndmr4549@gmail.com</a>
+                <button id="copy-email" class="copy-btn" title="Email'i kopyala">📋</button>
+                <span id="copy-message" class="copy-message"></span>
+            </p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/nurten-demir/" target="_blank">LinkedIn Profili</a></p>
+            <p>GitHub: <a href="https://github.com/Nurtendemirr" target="_blank">GitHub Profili</a></p>
+            <div class="cv-section">
+                <a href="NurtenDemirCv.pdf" download class="cv-button">CV'mi PDF olarak indir</a>
+            </div>
+        </div> 
+        <footer>
+            <p>&copy; 2026 Nurten Demir. Tüm hakları saklıdır.</p>
+            <p id="live-clock" class="live-clock"></p><p id="visitor-count" class="visitor-count"></p>
+        </footer>  
+    </div>
+        <!-- YAPAY ZEKA SOHBET BUTONU -->
+    <div class="ai-chat-container">
+        <button id="ai-chat-btn">🤖</button>
+        
+        <div id="ai-popup" class="ai-popup" style="display: none;">
+            <div class="ai-popup-header">
+                <h4>Nurten'in Asistanı</h4>
+                <button id="close-ai-popup">✖</button>
+            </div>
+            <div class="ai-popup-body">
+                <p id="ai-message">Merhaba! Ben Nurten'in yapay zeka asistanıyım. Ona ulaşmak için aşağıdaki butonları kullanabilirsin! 👋</p>
+            </div>
+            <div class="ai-popup-footer">
+                <a href="mailto:nrtndmr4549@gmail.com" class="ai-btn"> Email</a>
+                <a href="https://www.linkedin.com/in/nurten-demir/" target="_blank" class="ai-btn"> LinkedIn</a>
+                <a href="https://github.com/Nurtendemirr" target="_blank" class="ai-btn"> GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <button id="scroll-to-top" class="scroll-top" title="Yukarı Çık">↑</button>
+</body>
+</html>
